@@ -1,0 +1,307 @@
+:root{
+    --width:300px;
+    --padding:10px;
+    --bgcolor:#ffc904;
+    --width-collapsed: 50px;
+    
+}
+
+#port{
+    /* background-color: #032c55; */
+    /* overflow-y: hidden; */
+    color:black;
+    font-family:'Opens Sans',helvetica;  
+    height:100%;
+    width:101%;
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+.body_expanded{
+    margin-left: var(--width);
+    
+}
+
+#main_container{
+    color: white;
+    
+}
+.logo_imagen{
+   
+    margin-top: 4px;
+    margin-left: -12px;
+   max-width: 150px;
+   max-height: 51px;
+   width: 100%;
+   height: 900%;
+}
+
+#sidemenu{
+    background-color: var(--bgcolor) !important;
+    color: white;
+    position: fixed;
+    height: 0;
+    left: 0;
+    top: 0px;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+#sidemenu a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+/* CABECERA */
+
+#sidemenu #header{
+    background: #ffc904;
+
+    
+
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--hovercolor);
+}
+#sidemenu #header #title{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#sidemenu #header #title, #sidemenu #header #menu_btn{
+    vertical-align: middle;
+}
+#sidemenu #header #menu_btn{
+    display: inline-block;
+}
+#sidemenu #header #menu_btn{
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+#sidemenu #header #menu_btn:hover{
+    background-color: var(--hovercolor);
+}
+
+#sidemenu #header #menu_btn .btn_hamburger{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+/* PERFIL */
+
+#sidemenu #profile{
+    background: #ffc904;
+
+
+    position: relative;
+    border-bottom: solid 1px var(--hovercolor);
+    padding: var(--padding) 0;
+    text-align: center;
+}
+#sidemenu #profile #photo{
+    
+   box-sizing: border-box;
+   padding: var(--padding);
+   margin: 0 auto;
+}
+
+#sidemenu #profile #photo img{
+    
+    border-radius: 30%;
+    width: 50%;
+    height: 100px;
+}
+#sidemenu #profile #photo, #sidemenu #profile #name{
+
+    font-size: 24px;
+    padding: var(--padding) 0;
+    overflow: hidden;
+
+}
+
+/* FILTROS */
+#sidemenu #menu_items{
+    margin-top: 0px;
+
+    background: #ffbe0b;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+
+
+    position: relative;
+    
+}
+#sidemenu::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+#sidemenu #menu_items .item{
+    
+    margin-top: -15px;
+    padding: 0px;
+    margin-left: 10px;
+    width: 330px;
+    
+}
+#sidemenu #menu_items .item .icon{
+    display: inline-block;
+}
+#sidemenu #menu_items .item .icon,
+#sidemenu #menu_items .item .title{
+    font-size: 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+#sidemenu #menu_items .item a{
+    display: block;
+}
+#sidemenu #menu_items .item a:hover{
+    background-color: var(--hovercolor);
+} 
+#sidemenu #menu_items .item .icon{
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+}
+#sidemenu #menu_items .item .icon img{
+    width: 100%;
+    
+}
+#sidemenu #menu_items .item .title{
+    padding: var(--padding) 0;
+}
+
+#sidemenu #menu_items .item_separator{
+    height: 1px;
+    border-bottom: solid 1px var(--hovercolor);
+    margin: 15px 0;
+    
+}
+
+
+.menu_expanded{
+    width: var(--width);
+}
+.menu_expanded #header #title{
+    display: inline-block;
+    width: calc(100%-50px);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+.menu_expanded #header #title span{
+    width: calc(var(--width)- var(--width-collapsed) - 5px);
+    overflow: hidden;
+    display: inline-block;
+}
+.menu_expanded #profile #photo{
+    width: 200px;
+}
+.menu_expanded #profile #name{
+    width: 100%;
+}
+
+
+/* SELECT */
+
+.selectt {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: url("../../assets/fondito4.jpg");
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    font-weight: 400;
+    cursor:pointer;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+ }
+ .selectt::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 48px;
+    line-height: 3;
+    background: #16cbd8;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #1d6a77;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+
+ 
+ /* ESTILO RECARGAR PERSONAJES */
+ .btn{
+    display: inline-block;
+  padding: 5px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #d62828;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px #999;
+}
+.btn:hover {background-color: #e85d04}
+
+.btn:active {
+  background-color: #e85d04;
+  box-shadow: 0 5px #dc2f02;
+  transform: translateY(4px);
+}
+
+/* ESTILO CREAR POKEMON LINK */
+.ala {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    max-width: 48.5vh;
+    max-height: 100vh;
+    background-color: #65afff;
+    box-shadow: 0 5px 0 #c9fbff;
+    color: white;
+    padding: .15em 5.5em;
+    position: relative ;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+  
+  .ala:hover {
+    background-color: #65afff;
+    cursor: pointer;
+  }
+  
+  .ala:active {
+    box-shadow: none;
+    top: 5px;
+  }

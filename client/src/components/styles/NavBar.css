@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/* .primerA{
+position: absolute;
+}
+.segundoA{
+position: absolute;
+} */
+.veamos{
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 400px;
+   max-width: 160px;
+   max-height: 100px;
+   width: 100%;
+   height: 900%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(0,0,0,0.6); */
+    background-color: #ffbe0b;
+    /* position: fixed; */
+    top: 0;
+    padding: 8px 70px 0px;
+    font-family: "Poppins", sans-serif;
+    /* backdrop-filter: blur(8px); */
+    /* box-shadow: 0 20px 30px rgba(0,0,0,0.15); */
+    
+}
+.logo-imagen{
+    margin-left: 15px;
+   max-width: 160px;
+   max-height: 50px;
+   width: 100%;
+   height: 900%;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+li a{
+    margin-left: 40px;
+}
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+}

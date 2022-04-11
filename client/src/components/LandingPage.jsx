@@ -42,7 +42,7 @@ export default function LandingPage(){
               <ul>
                 {/* <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li> */}
-                <li><a href="#" className={style.btn}>ACERCA DE MI</a></li>
+                <li><a href="https://manuel-hurtado.netlify.app/" className={style.btn}>ACERCA DE MI</a></li>
                 <li><a href="/home" className={style.btn}>ENTRAR</a></li>
               </ul>
             </div>
